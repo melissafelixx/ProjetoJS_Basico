@@ -1,37 +1,95 @@
-﻿# Projeto JS Básico - Simulador de Caixa Eletrônico
+# 💳 Simulador de Caixa Eletrônico | JavaScript
 
-Projeto desenvolvido para praticar JavaScript manipulando elementos do DOM e regras de lógica de negócio em um fluxo simples de saque e depósito.
+Projeto desenvolvido com foco em prática de **lógica de programação**, **manipulação do DOM** e controle de estado utilizando **JavaScript puro (Vanilla JS)**.
 
-## Descrição curta
-Aplicação web simples que simula um caixa eletrônico com saldo inicial fixo, permitindo escolher entre saque e depósito e atualizar o saldo em tempo real.
+A aplicação simula operações básicas de um caixa eletrônico, permitindo ao usuário realizar saques e depósitos com atualização dinâmica do saldo.
 
-## Funcionalidades
-- Exibir saldo inicial na tela (`R$ 1000,00`).
-- Escolher operação: `Sacar` ou `Depositar`.
-- Exibir área de transação apenas após a escolha da operação.
-- Validar valor digitado (não permite valores menores ou iguais a zero).
-- Impedir saque com saldo insuficiente.
-- Atualizar o saldo após cada operação.
-- Exibir mensagem de sucesso/erro para o usuário.
-- Retornar ao menu inicial após concluir a transação.
+---
 
-## O que eu aprendi
-- Como estruturar a lógica por etapas (escolher operação e depois confirmar).
-- Como usar `getElementById` para acessar elementos da página.
-- Como mostrar/esconder blocos com `style.display`.
-- Como validar entradas do usuário antes de processar uma ação.
-- Como atualizar textos dinamicamente na interface com JavaScript.
-- Como organizar melhor o código com variáveis de estado (`saldo` e `operacaoAtual`).
+## 🎯 Objetivo do Projeto
 
-## Tecnologias
+Demonstrar domínio de:
+
+- Estruturação de fluxo lógico
+- Manipulação de elementos da interface
+- Validação de dados do usuário
+- Controle de estado da aplicação
+- Organização de código em JavaScript
+
+---
+
+## 🚀 Funcionalidades
+
+- Exibição de saldo inicial (`R$ 1000,00`)
+- Seleção de operação: **Saque** ou **Depósito**
+- Exibição condicional da área de transação
+- Validação de valores inválidos (≤ 0)
+- Bloqueio de saque com saldo insuficiente
+- Atualização automática do saldo
+- Feedback visual com mensagens de erro e sucesso
+- Retorno ao menu inicial após conclusão da operação
+
+---
+
+## 🧠 Conceitos Aplicados
+
+Durante o desenvolvimento, foram aplicados:
+
+- Manipulação do DOM com `getElementById`
+- Controle de visibilidade com `style.display`
+- Estruturas condicionais (`if/else`)
+- Conversão e validação de valores numéricos
+- Controle de estado com variáveis globais
+
+Exemplo de controle de estado:
+
+```javascript
+let saldo = 1000;
+let operacaoAtual = "";
+```
+
+---
+
+## 🛠 Tecnologias Utilizadas
+
 - HTML5
 - CSS3
 - JavaScript (ES6)
 
-## Demo
-- Repositório: https://github.com/melissafelixx/ProjetoJS_Basico
-- Execução local: abra o arquivo `index.html` no navegador.
-- (Opcional) GitHub Pages: https://melissafelixx.github.io/ProjetoJS_Basico/
+---
+
+## 📂 Estrutura do Projeto
+
+```
+📁 ProjetoJS_Basico
+ ├── index.html
+ ├── style.css
+ └── script.js
+```
 
 ---
-Projeto criado com foco em aprendizado e prática contínua de JavaScript.
+
+## 🌐 Acesse o Projeto
+
+🔗 Repositório:  
+https://github.com/melissafelixx/ProjetoJS_Basico  
+
+💻 Para executar localmente:
+Basta abrir o arquivo `index.html` em seu navegador.
+
+---
+
+## 📈 Próximas Melhorias
+
+- Melhorar a interface com design mais moderno
+- Implementar histórico de transações
+- Adicionar formatação automática de moeda
+- Refatorar código para funções reutilizáveis
+
+---
+
+## 👩‍💻 Desenvolvido por
+
+Melissa Felix Santos  
+
+Projeto criado como parte do meu processo contínuo de aprendizado.
