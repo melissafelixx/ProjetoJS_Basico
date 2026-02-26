@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Simulador de Caixa Eletônico</h1>
+        <div id="input-group">
+            <label>O seu saldo é de R$ <span id="saldo">5000,00</span></label><br><br>
+            <label>Você deseja: <br>- SACAR <br>- DEPOSITAR</label><br><br>
+        </div>
+
+        <div id="menuInicial">
+            <button onclick="sacar()">Sacar</button>
+            <button onclick="depositar()">Depositar</button>
+        </div>
+
+        <div id="areaTransacao" style="display: none;">
+            <input type="number" id="inputValor" placeholder="Digite o valor">
+            <button onclick="adicionarValor()">Concluir Transição</button>
+        </div>
+
+
+        <p id="mensagem"></p>
+        <ul id="extrato"></ul>
+    </div>
+
+
+
+    <div id="result"></div>
+    <script src="index.js"></script>
+</body>
+
+</html>
